@@ -727,8 +727,9 @@ extern const uint8_t numfont16x22[];
 #define KP_Y_OFFSET               0                                                // numeric keypad Y offset
 #define KPF_WIDTH                 (LCD_WIDTH / 10)                                 // text keypad button width
 #define KPF_HEIGHT                KPF_WIDTH                                        // text keypad button height
+#define KPF_ROWS                  5                                                // text keypad rows (symbols, digits, 3 letter rows)
 #define KPF_X_OFFSET              0                                                // text keypad X offset
-#define KPF_Y_OFFSET              (LCD_HEIGHT - NUM_INPUT_HEIGHT - 4 * KPF_HEIGHT) // text keypad Y offset
+#define KPF_Y_OFFSET              (LCD_HEIGHT - NUM_INPUT_HEIGHT - KPF_ROWS * KPF_HEIGHT) // text keypad Y offset
 
 #define S_ENTER    "\026"  // 0x16
 #define S_DELTA    "\027"  // 0x17
